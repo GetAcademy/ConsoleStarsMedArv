@@ -8,16 +8,12 @@ namespace ConsoleStars
     {      
         static void Main(string[] args)
         {
-            //var randomStar = RandomStar.GenerateRandomStar();
             var random = new Random();
             var stars = new Star[]
             {
                 new Star(random),
                 new Star(random),
                 new Star(random),
-                new MovableStar(random), 
-                new MovableStar(random), 
-                new MovableStar(random), 
             };
             while (true)
             {
@@ -29,7 +25,7 @@ namespace ConsoleStars
                 }
                 Console.CursorLeft = 0;
                 Console.CursorTop = 0;
-                Thread.Sleep(100);
+                Thread.Sleep(200);
             }
         }
     }
