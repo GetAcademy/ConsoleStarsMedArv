@@ -18,8 +18,8 @@ namespace ConsoleStars
 
         public Star(Random random)
         {
-            _x = random.Next(1, 60);
-            _y = random.Next(1, 40);
+            _x = random.Next(1, Console.WindowWidth - 1);
+            _y = random.Next(1, Console.WindowHeight - 1);
             _phase = random.Next(0, _phaseChars.Length);
         }
 
@@ -27,7 +27,7 @@ namespace ConsoleStars
         {
             Console.CursorLeft = _x;
             Console.CursorTop = _y;
-            Console.Write(_phaseChars[_phase]);                      
+            Console.Write(_phaseChars[_phase]);
         }
 
         public virtual void Update()

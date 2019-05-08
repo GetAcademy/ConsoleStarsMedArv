@@ -14,6 +14,9 @@ namespace ConsoleStars
                 new Star(random),
                 new Star(random),
                 new Star(random),
+                new MovableStar(random),
+                new MovableStar(random),
+                new MovableStar(random),
             };
             while (true)
             {
